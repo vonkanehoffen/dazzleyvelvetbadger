@@ -1,5 +1,5 @@
 /*
-Theme Name:       Storechild
+Theme Name:       DazzleyBadger
 Theme URI:        http://www.woothemes.com/products/storechild/
 Description:      A storefront child theme starter.
 Author:           WooThemes
@@ -26,3 +26,19 @@ h5,
 h6 {
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 900; }
+
+#bg-patterns {
+  width: 100vw;
+  height: 100vh; }
+
+#splash {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  #splash .inner {
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    background: #000000; }

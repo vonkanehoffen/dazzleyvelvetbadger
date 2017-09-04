@@ -43,7 +43,8 @@ if ( ! class_exists( 'Storechild' ) ) {
 			/**
 			 * Javascript
 			 */
-			wp_enqueue_script( 'storechild', get_stylesheet_directory_uri() . '/assets/js/storechild.min.js', array( 'jquery' ), $storechild_version, true );
+			wp_register_script('snap-svg', get_stylesheet_directory_uri() . '/assets/js/snap.svg-min.js', null, $storechild_version, true );
+			wp_enqueue_script( 'storechild', get_stylesheet_directory_uri() . '/assets/js/storechild.js', array( 'jquery', 'snap-svg' ), $storechild_version, true );
 		}
 
 		/**

@@ -24,10 +24,11 @@ h3,
 h4,
 h5,
 h6 {
+  color: #fff;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 900; }
 
-#bg-patterns {
+#bg-scene {
   width: 100vw;
   height: 100vh; }
 
@@ -41,4 +42,4 @@ h6 {
     width: 300px;
     height: 100px;
     margin: auto;
-    background: #000000; }
+    background: rgba(0, 0, 0, 0.5); }

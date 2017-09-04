@@ -22,7 +22,7 @@
 
 	<div id="page" class="hfeed site">
 
-		<svg id="bg-patterns"></svg>
+		<div id="bg-scene"></div>
 		<div id="splash">
 			<div class="inner">
 				<h1>Dazzley meets Velvet Badger</h1>

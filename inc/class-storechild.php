@@ -57,6 +57,7 @@ if ( ! class_exists( 'Storechild' ) ) {
 			$fonts = array(
 				'alegreya'      => 'Alegreya:400,400italic,700,900',
 				'alegreya-sans' => 'Alegreya+Sans:400,400italic,700,900',
+				'shrikhand'     => 'Shrikhand:400',
 			);
 
 			return $fonts;

@@ -18,7 +18,7 @@ Text Domain:      storechild
 @import '../storefront/assets/sass/vendors/font-awesome/variables';
 @import '../storefront/assets/sass/vendors/font-awesome/mixins';
 
-$font_headings: 'Alegreya Sans', sans-serif;
+$font_headings: 'Shrikhand', sans-serif;
 $font_body:     'Alegreya', serif;
 
 body,
@@ -35,9 +35,8 @@ h3,
 h4,
 h5,
 h6 {
-	color: #fff;
 	font-family: $font_headings;
-	font-weight: 900;
+	font-weight: 400;
 }
 
 #bg-scene {
@@ -52,9 +51,14 @@ h6 {
 	width: 100%;
 	height: 100%;
 	.inner {
-		width: 300px;
-		height: 100px;
+		width: 500px;
 		margin: auto;
+		padding: 10px;
 		background: rgba(0,0,0,0.5);
 	}
+		h1 {
+			font-size:60px;
+			color: #ff00e7;
+			margin: 0;
+		}
 }

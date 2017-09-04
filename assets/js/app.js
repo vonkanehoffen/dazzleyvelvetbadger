@@ -1,14 +1,15 @@
 import * as THREE from 'three'
+import randomColor from 'random-color'
 
 // Set up canvas
 const container = document.getElementById('bg-scene')
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, container.clientWidth/container.clientHeight, 0.1, 1000 );
-camera.position.z = 8;
+const scene = new THREE.Scene()
+const camera = new THREE.PerspectiveCamera( 75, container.clientWidth/container.clientHeight, 0.1, 1000 )
+camera.position.z = 8
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize( container.clientWidth, container.clientHeight );
-container.appendChild( renderer.domElement );
+const renderer = new THREE.WebGLRenderer()
+renderer.setSize( container.clientWidth, container.clientHeight )
+container.appendChild( renderer.domElement )
 
 // Adjust on resize
 window.addEventListener('resize', () => {
@@ -18,10 +19,10 @@ window.addEventListener('resize', () => {
 })
 
 // Create objects
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00fff0 } );
+const geometry = new THREE.BoxGeometry( 1, 1, 1 )
 
 const makeCube = () => {
+  const material = new THREE.MeshBasicMaterial( { color: randomColor().hexString() } )
   let cube = new THREE.Mesh(geometry, material)
   cube.position.x = (Math.random()*10) - 5
   cube.position.y = (Math.random()*10) - 5

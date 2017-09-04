@@ -28,5 +28,8 @@
     "susy": "^2.2.5",
     "three": "^0.87.1",
     "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "random-color": "^1.0.1"
   }
 }

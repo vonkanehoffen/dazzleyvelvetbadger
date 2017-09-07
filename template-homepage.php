@@ -25,7 +25,8 @@
 		<div id="bg-scene"></div>
 		<div id="splash">
 			<div class="inner">
-				<h1 class="swirly-colours">Dazzley meets Velvet Badger</h1>
+				<h1 class="swirly-colours"><?= get_bloginfo('name') ?></h1>
+				<h4 class="swirly-colours"><?= get_bloginfo('description') ?></h4>
 			</div>
 		</div>
 

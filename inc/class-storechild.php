@@ -24,6 +24,7 @@ if ( ! class_exists( 'Storechild' ) ) {
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts',              array( $this, 'enqueue_styles' ) );
 			add_filter( 'storefront_google_font_families', array( $this, 'storechild_fonts' ) );
+			add_filter( 'storefront_recent_products_args', array( $this, 'recent_products_args') );
 		}
 
 		/**
@@ -60,6 +61,14 @@ if ( ! class_exists( 'Storechild' ) ) {
 			);
 
 			return $fonts;
+		}
+
+		public function recent_products_args( $args ) {
+			return array(
+				'limit' 			=> 3,
+				'columns' 			=> 3,
+				'title'				=> 'Get Tickets Boi',
+			);
 		}
 	}
 }

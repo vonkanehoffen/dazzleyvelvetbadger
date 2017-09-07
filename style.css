@@ -29,7 +29,8 @@ h6 {
 
 #bg-scene {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  background: #000000; }
 
 #splash {
   display: flex;

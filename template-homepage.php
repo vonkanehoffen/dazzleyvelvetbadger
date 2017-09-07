@@ -25,7 +25,7 @@
 		<div id="bg-scene"></div>
 		<div id="splash">
 			<div class="inner">
-				<h1>Dazzley meets Velvet Badger</h1>
+				<h1 class="swirly-colours">Dazzley meets Velvet Badger</h1>
 			</div>
 		</div>
 

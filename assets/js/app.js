@@ -31,28 +31,38 @@ const makeCube = () => {
   return cube
 }
 
+// Instantiate objects
 let cubes = []
-
 for(let i = 0; i < 30; i++) {
   cubes[i] = makeCube()
 }
 
+// Animation loop
 let count = 0
-
 const animate = () => {
   requestAnimationFrame( animate )
+
+  // Rotate cubes
   cubes.forEach(c => {
     c.rotation.x += 0.05
     c.rotation.y += 0.05
     c.rotation.x += 0.01
   })
+
+  // Rotate camera
   camera.rotation.z += 0.02
-  // Every 4 frames...
+
+  // Drop first cube & respawn new one every 4 frames...
   if(count % 4 === 0) {
     scene.remove(cubes[0])
     cubes.shift()
     cubes[cubes.length] = makeCube()
   }
+  // Cycle heading text colour
+  if(count % 10 === 0) {
+    document.getElementsByClassName('swirly-colours')[0].style['color'] = randomColor().hexString()
+  }
+
   count ++
 
   renderer.render(scene, camera)
